@@ -1,0 +1,15 @@
+{
+  "_func": "post_candidate_score_data",
+  "s-code": "senior",
+  "client-user-id": "1001",
+  "candidate-id": "123",
+  "candidate-name": "abc",
+  "_data": {
+    "age": 58,
+    "health": "low_risk",
+    "work-environment":"excellent",
+    "oral_communication":"excellent",
+    "written_communication": "excellent",
+    "professional_behavior": "excellent"
+  }
+}

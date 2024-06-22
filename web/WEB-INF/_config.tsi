@@ -1,0 +1,17 @@
+# TSI Accelerator Framework
+framework.db.host=jdbc:postgresql://localhost:5432
+framework.db.name=_tsi_grc_service
+framework.db.user=demo
+framework.db.password=demo@123
+
+# Digitap
+digitap.apiurl=
+digitap.apikey=
+digitap.apisecret=
+
+digitap.pennydrop.apiurl=
+#digitap.pennydrop.apiurl=
+
+
+
+

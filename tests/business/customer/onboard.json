@@ -1,0 +1,28 @@
+{
+  "_func": "onboard",
+  "mobile": "1234787921",
+  "ctx":{
+    "partner": "ABCD",
+    "principal": "Satish3",
+    "state": "TN",
+    "region": "CBE",
+    "branch": "Thudialur"
+  },
+  "pii_attrs":{
+    "name": "AB",
+    "gender": "F",
+    "address": "...",
+    "pan": "..."
+  },
+  "other_attrs": {
+    "occupation": "XYZ",
+    "income": "300000",
+    "expense": "160000"
+  },
+  "kyc_verification_status": {
+    "aadhaar": "yes",
+    "pan": "yes",
+    "bankaccount": "yes"
+  },
+  "client-user-id":"1001"
+}

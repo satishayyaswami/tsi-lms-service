@@ -1,0 +1,69 @@
+TSI Backend Service - v0.1
+--------------------------------------------------------------------------------------------
+
+# Create New API User
+curl -X POST -H "Content-Type: application/json" -d @C:\work\tsi-backend-service\tests\system\create-api-user.json http://localhost:8080/tsi/framework/apiuser
+
+# Add Office
+curl -X POST -H "Content-Type: application/json" -H "Authorization:Basic YUBiLmNvbTowMjMxOTc2Nzg4N2RiODJlM2MyYTk4OTVkMjhiMGEyOA==" -d @C:\work\tsi-backend-service\tests\business\add-office.json http://localhost:8080/tsi/business/user
+
+# Add App
+curl -X POST -H "Content-Type: application/json" -H "Authorization:Basic YUBiLmNvbTowMjMxOTc2Nzg4N2RiODJlM2MyYTk4OTVkMjhiMGEyOA==" -d @C:\work\tsi-backend-service\tests\business\add-app.json http://localhost:8080/tsi/business/user
+
+# Add Role
+curl -X POST -H "Content-Type: application/json" -H "Authorization:Basic YUBiLmNvbTowMjMxOTc2Nzg4N2RiODJlM2MyYTk4OTVkMjhiMGEyOA==" -d @C:\work\tsi-backend-service\tests\business\add-role.json http://localhost:8080/tsi/business/user
+
+# Add User
+curl -X POST -H "Content-Type: application/json" -H "Authorization:Basic YUBiLmNvbTowMjMxOTc2Nzg4N2RiODJlM2MyYTk4OTVkMjhiMGEyOA==" -d @C:\work\tsi-backend-service\tests\business\add-user.json http://localhost:8080/tsi/business/user
+
+# Onboard Customer
+curl -X POST -H "Content-Type: application/json" -H "Authorization:Basic YUBiLmNvbTowMjMxOTc2Nzg4N2RiODJlM2MyYTk4OTVkMjhiMGEyOA==" -d @C:\work\tsi-backend-service\tests\business\customer\onboard.json http://localhost:8080/tsi/business/customer
+
+# PAN validation
+curl -X POST -H "Content-Type: application/json" -H "Authorization:Basic YUBiLmNvbTo2YmJmNzkyNWRkZmMxNzI2ZmJiZTIzM2QxNjkyYWUwYQ==" -d @C:\work\tsi-backend-service\tests\integration\kyc\pan-validation.json http://localhost:8080/tsi/integration/kyc/panvalidation
+
+# VoterId Validation
+curl -X POST -H "Content-Type: application/json" -H "Authorization:Basic YUBiLmNvbTo2YmJmNzkyNWRkZmMxNzI2ZmJiZTIzM2QxNjkyYWUwYQ==" -d @C:\work\tsi-backend-service\tests\integration\kyc\voterid-validation.json http://localhost:8080/tsi/integration/kyc/voteridvalidation
+
+# Aadhaar Validation
+curl -X POST -H "Content-Type: application/json" -H "Authorization:Basic YUBiLmNvbTo2YmJmNzkyNWRkZmMxNzI2ZmJiZTIzM2QxNjkyYWUwYQ==" -d @C:\work\tsi-backend-service\tests\integration\kyc\aadhaar-validation.json http://localhost:8080/tsi/integration/kyc/aadhaarvalidation
+
+# Upload Document
+curl -X POST -H "Content-Type: application/json" -H "Authorization:Basic YUBiLmNvbTowMjMxOTc2Nzg4N2RiODJlM2MyYTk4OTVkMjhiMGEyOA==" -d @C:\work\tsi-backend-service\tests\business\document\sampledoc.json http://localhost:8080/tsi/business/document
+
+# Apply Loan
+curl -X POST -H "Content-Type: application/json" -H "Authorization:Basic YUBiLmNvbTowMjMxOTc2Nzg4N2RiODJlM2MyYTk4OTVkMjhiMGEyOA==" -d @C:\work\tsi-backend-service\tests\business\loan\application.json http://localhost:8080/tsi/business/loan
+
+# Post Sanction
+curl -X POST -H "Content-Type: application/json" -H "Authorization:Basic YUBiLmNvbTowMjMxOTc2Nzg4N2RiODJlM2MyYTk4OTVkMjhiMGEyOA==" -d @C:\work\tsi-backend-service\tests\business\loan\post-sanction.json http://localhost:8080/tsi/business/loan
+
+# Apply Loan
+curl -X POST -H "Content-Type: application/json" -H "Authorization:Basic YUBiLmNvbTowMjMxOTc2Nzg4N2RiODJlM2MyYTk4OTVkMjhiMGEyOA==" -d @C:\work\tsi-backend-service\tests\business\loan\post-disbursement.json http://localhost:8080/tsi/business/loan
+
+
+# LOS - Workflow definition
+curl -X POST -H "Content-Type: application/json" -H "Authorization:Basic c2F0aXNoQHRzaWNvbnN1bHRpbmcuaW46NzE4YmIzMWIxZjVmOGZkMGY2ZmY4ZDZmOTBjMGYwYTE=" -d @C:\work\tsi-accelerator\tests\los\proto-post-los-workflow.json http://localhost:8080/tsi/solutions/finance/loan/los/proto
+
+# LOS - Create Loan Application
+curl -X POST -H "Content-Type: application/json" -H "Authorization:Basic c2F0aXNoQHRzaWNvbnN1bHRpbmcuaW46NzE4YmIzMWIxZjVmOGZkMGY2ZmY4ZDZmOTBjMGYwYTE=" -d @C:\work\tsi-accelerator\tests\los\proto-post-loan-application.json http://localhost:8080/tsi/solutions/finance/loan/los/proto
+
+# LOS - Post LOS Activity
+curl -X POST -H "Content-Type: application/json" -H "Authorization:Basic c2F0aXNoQHRzaWNvbnN1bHRpbmcuaW46NzE4YmIzMWIxZjVmOGZkMGY2ZmY4ZDZmOTBjMGYwYTE=" -d @C:\work\tsi-accelerator\tests\los\proto-post-los-activity.json http://localhost:8080/tsi/solutions/finance/loan/los/proto
+
+# LOS - GET LOS Workflow
+curl -X GET -H "Content-Type: application/json" -H "Authorization:Basic c2F0aXNoQHRzaWNvbnN1bHRpbmcuaW46NzE4YmIzMWIxZjVmOGZkMGY2ZmY4ZDZmOTBjMGYwYTE=" -d @C:\work\tsi-accelerator\tests\los\proto-get-los-workflow.json http://localhost:8080/tsi/solutions/finance/loan/los/proto
+
+# LOS - GET LOS Applications
+curl -X GET -H "Content-Type: application/json" -H "Authorization:Basic c2F0aXNoQHRzaWNvbnN1bHRpbmcuaW46NzE4YmIzMWIxZjVmOGZkMGY2ZmY4ZDZmOTBjMGYwYTE=" -d @C:\work\tsi-accelerator\tests\los\proto-get-los-applications.json http://localhost:8080/tsi/solutions/finance/loan/los/proto
+
+# LOS - GET LOS Activities
+curl -X GET -H "Content-Type: application/json" -H "Authorization:Basic c2F0aXNoQHRzaWNvbnN1bHRpbmcuaW46NzE4YmIzMWIxZjVmOGZkMGY2ZmY4ZDZmOTBjMGYwYTE=" -d @C:\work\tsi-accelerator\tests\los\proto-get-los-activities.json http://localhost:8080/tsi/solutions/finance/loan/los/proto
+
+# LOS - GET Data Fields
+curl -X GET -H "Content-Type: application/json" -H "Authorization:Basic c2F0aXNoQHRzaWNvbnN1bHRpbmcuaW46NzE4YmIzMWIxZjVmOGZkMGY2ZmY4ZDZmOTBjMGYwYTE=" -d @C:\work\tsi-accelerator\tests\los\proto-get-los-data-fields.json http://localhost:8080/tsi/solutions/finance/loan/los/proto
+
+# Jobs - Scorecard definition
+curl -X POST -H "Content-Type: application/json" -H "Authorization:Basic YWtpbGVzaEBxYnJpay5pbjo2ODI1ZjhmMTQ0M2Q0ZDRiYzIwYzBjZGY3MmYzMDE3Mg===" -d @C:\work\tsi-accelerator\tests\jobs\proto-post-senior-candidate-score-def.json http://localhost:8080/tsi/solutions/jobs/proto
+
+# Jobs - Post Candidate Score
+curl -X POST -H "Content-Type: application/json" -H "Authorization:Basic YWtpbGVzaEBxYnJpay5pbjo2ODI1ZjhmMTQ0M2Q0ZDRiYzIwYzBjZGY3MmYzMDE3Mg==" -d @C:\work\tsi-accelerator\tests\jobs\proto-post-candidate-score.json http://localhost:8080/tsi/solutions/jobs/proto
